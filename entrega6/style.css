@@ -1,0 +1,36 @@
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+
+.cards {
+    margin: 30px 0;
+
+}
+
+.title {
+    text-align: center;    
+    margin: 30px 0;
+
+}
+
+#cardCarts {
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+    gap: 5%;
+}
+
+.cartCard {
+    margin: auto;
+
+}
+
+.checkoutButton {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;   
+}
