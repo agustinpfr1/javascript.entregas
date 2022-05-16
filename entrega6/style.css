@@ -34,3 +34,7 @@ align-items: center;
     margin: auto;
     margin-bottom: 50px;   
 }
+
+.removeItem {
+    color: red;
+}

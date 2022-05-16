@@ -91,15 +91,27 @@ let cartCard = `<div class="card mb-3 cartCard" style="max-width: 540px;">
     <div class="card-body">
       <h5 class="card-title">${catalog[i].title}</h5>
       <p class="card-text card-price">${catalog[i].currency} ${catalog[i].price}</p>
+      <a href="#" class="removeItems danger">Remove item</a>
+      </div> 
     </div>
   </div>
-</div>
 </div>`
 
 let cardCheckout = document.querySelector("#cartCards") 
 cardCheckout.innerHTML += (cartCard)
 
+let removeItems = element.querySelector(".removeItem") 
+removeItems.addEventListener("click", removeCard)
+
+function removeCard() {
+    cardCheckout.innerHTML -= (cartCard)
 }
+
+
+}
+
+
+
 }
 
 

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+.pizzaSlice img {
+    max-height: 350px;
+
+}
+.perSecond {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+
+
+}
+.perSecond p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    padding-right: 10px;
+    
+    
+}
+
+#perSecond {
+    border: 0px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    width: 100%; 
+}
+ 
+h1, .pizzaSlice {
+    text-align: center;
+    margin: 10px;
+}
+h1 {
+    margin-top: 30px;
+}
+h1, p, h2, h3, btn, input {
+    font-family: 'Quicksand', sans-serif;
+color: white;
+}
+
+
+#inc {
+    margin: 30px 0;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    padding-right: 10px ;
+
+    
+}
+
+.counterNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+}
+
+#pizzaCounter:active{
+    transform: translateY(4px);
+
+}
+
+.powerup img {
+height: 150px;
+}
+
+.powerup {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(236, 236, 236);
+    max-width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cardContent p {
+    color: black;
+
+}
+
+.cardContent h3 {
+    color: black;
+
+}
+
+.upgradePanel {
+    display: flex;
+justify-content: flex-start;
+margin: 10%;
+gap: 5%;
+}
+
+#purchaseUpgrade {
+    padding: 5px 0;
+    color: blue;
+}
+
+#purchaseUpgrade:hover {
+cursor: pointer;
+color: rgb(1, 1, 117);
+}
+
+#resetButton {
+    color: white;
+}

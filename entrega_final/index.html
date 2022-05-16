@@ -11,141 +11,71 @@
 
 <body>
 
-    <div class="pageWidth">
-        <h1>Rent or Buy Calculator</h1>
-        <h2>Is It Better to Rent or Buy?</h2>
-        <p>The choice between buying a home and renting one is among the biggest financial decisions that many adults
-            make.
-            But the costs of buying are more varied and complicated than for renting, making it hard to tell which is a
-            better deal.
-            To help you answer this question, our calculator takes the most important costs associated with buying a
-            house and computes the equivalent monthly rent.</p>
-        <a href="https://www.nytimes.com/2014/05/22/upshot/rent-or-buy-the-math-is-changing.html" class="ref">Related
-            article</a>
+    <h1>Pizza Clicker</h1>
+
+    <div class="counterNumber">
+        <p id="inc"></p>
+        <p>pizza slices</p>
+    </div>
+
+    <div class="perSecond">
+        <p>per second: </p>
+        <p id="secondCounter"></p>
+    </div>
+
+    <div class="pizzaSlice">
+        <img id="pizzaCounter" src="./assets/pizzaSlice.png" alt="">
+    </div>
+
+    <div class="upgradePanel">
+        <div id="upgrade1" class="powerup">
+            <img src="./assets/cursor.png" alt="">
+            <div class="cardContent">
+                <h3 class="name">Cursor</h3>
+                <p class="upgradeCost">Upgrade cost: <span></span> </p>
+                <p class="makesPerSecond">Per second: <span></span> </p>
+                <p id="upgradeQuantity1">Purchased: <span></span> </p>
+                <p id="purchaseUpgrade">Purchase Upgrade</p>
+            </div>
+        </div>
 
 
-        <h3>Home price</h3>
-        <p>A very important factor, but not the only one. Our estimate will improve as you enter more details below.</p>
-        <div class="slidecontainer">
-            <input type="range" min="20000" max="3000000" value="20000" class="slider" id="myRange">
+        <div class="powerup upgrade2">
+            <img src="./assets/grandma.png" alt="">
+            <div class="cardContent">
+                <h3 class="name">Italian Grandma</h3>
+                <p class="upgradeCost">Upgrade cost: <span></span> </p>
+                <p class="makesPerSecond">Per second: <span></span> </p>
+                <p class="upgradeQuantity">Purchased: <span></span> </p>
+            </div>
         </div>
 
-        <h3>How Long Do You Plan to Stay?</h3>
-        <p>Buying tends to be better the longer you stay because the upfront fees are spread out over many years.
-        </p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-
-        <h3>What are your mortgage details?</h3>
-        <p>In addition to the interest rate and down payment, the calculator takes into account the mortgage-interest
-            tax deduction.
-        </p>
-        <p>Mortgage rate</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-        <p>Down payment</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-        <p>Length of mortgage</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-
-        <h3>What Does the Future Hold?</h3>
-        <p>How much home prices, rents and stock prices change can have a large impact on your outcome.
-            Unfortunately, these are some of the hardest things to predict.
-            If you choose to rent instead of buying, the calculator assumes that you’ll spend your would-be down payment
-            on stocks or another investment.
-        </p>
-        <p>Home price growth rate</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-        <p>Rent growth rate</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-        <p>Investment return rate</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-        <p>Inflation rate</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-
-        <h3>Taxes</h3>
-        <p>Property taxes and mortgage-interest costs are significant but also deductible.
-            The higher your marginal tax rate is, the bigger the deduction.
-        </p>
-        <p>Property tax rate</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-        <p>Marginal tax rate</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-
-        <h3>Closing costs</h3>
-        <p>You’ll have to pay various fees when you buy your home, as well as when you sell it.
-        </p>
-        <p>Costs of buying home</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-        <p>Costs of selling home</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-
-        <h3>Maintenance and Fees
-        </h3>
-        <p>Owning a home comes with a surprising variety of expenses that renters do not directly pay.
-        </p>
-        <p>Maintenance / rennovation</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-        <p>Homeowner's insurance</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-        <p>Monthly utilities</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-        <p>Monthly common fees</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-        <p>Common fees deduction</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-
-        <h3>Additional Renting Costs
-        </h3>
-        <p>These are the costs on top of rent, such as the fee you pay to a broker and the opportunity cost on your security deposit. 
-        But these expenses typically have a negligible impact.
-        <p>Security deposit</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-        <p>Broker's fee</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
-        </div>
-        <p>Renter's insurance</p>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="40" value="1" class="slider" id="myRange">
+        <div class="powerup upgrade3">
+            <img src="./assets/bakery.png" alt="">
+            <div class="cardContent">
+                <h3 class="name">Bakery</h3>
+                <p class="upgradeCost">Upgrade cost: <span></span> </p>
+                <p class="makesPerSecond">Per second: <span></span> </p>
+                <p class="upgradeQuantity">Purchased: <span></span> </p>
+            </div>
         </div>
 
     </div>
-    <script src="custom.js"></script>
+
+
+    <p id="resetButton">Reset</p>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
